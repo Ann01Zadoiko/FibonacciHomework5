@@ -1,11 +1,11 @@
 Spatial complexity:
 
 DP: O(n)
-Iterator: О(n)
-Recursive:  О(2^n)
+Iterator: O(1)
+Recursive: O(2^n)
 
 Time complexity:
 
-DP:
-Iterator:
-Recursive:
+DP: O(n)
+Iterator: О(n)
+Recursive: О(e^n)
