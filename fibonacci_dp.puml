@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:getFibonacci(int n);
+
+:List<Long> fibonacciList = new ArrayList<>();
+
+while (i <= n)
+    :int i = 0;
+  if (i <= 1) then (true)
+    :fibonacciList.add((long) i);
+  else (false)
+    :fibonacciList.add(fibonacciList.get(i - 1) + fibonacciList.get(i - 2));
+  endif
+  :i++;
+endwhile
+
+:fibonacciList.get(n);
+
+stop
+
+@enduml

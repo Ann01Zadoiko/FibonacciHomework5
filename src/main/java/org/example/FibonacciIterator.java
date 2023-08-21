@@ -1,0 +1,28 @@
+package org.example;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class FibonacciIterator {
+
+    public long getFibonacci(int n){
+        long fib = 1;
+        long prevFib = 1;
+
+        if (n <= 1){
+            return n;
+        }
+
+        for (long i = 2; i < n; i++) {
+
+            long temp = fib;
+            fib += prevFib;
+            prevFib = temp;
+
+        }
+
+        return fib;
+    }
+
+}

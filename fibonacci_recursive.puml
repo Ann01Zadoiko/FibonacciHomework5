@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:getFibonacci(int n);
+
+if (n <= 1) then (true)
+  :n;
+else (false)
+    :getFibonacci(n-1) + getFibonacci(n-2);
+    endif
+
+stop
+
+@enduml

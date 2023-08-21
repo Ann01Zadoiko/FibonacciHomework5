@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:getFibonacci(int n);
+:fib = 1; prevFib = 1;
+
+
+if (n <= 1) then (true)
+  :n;
+   endif
+
+while (i < n)
+    :i = 2;
+    :long temp = fib;
+    :fib += prevFib;
+    :prevFib = temp;
+    :i++;
+endwhile
+
+:fib;
+
+stop
+
+@enduml
